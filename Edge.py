@@ -3,10 +3,10 @@ from Node import Node
 
 
 class Edge:
-    def __init__(self, value: float, src: Node = None, dst: Node = None):
+    def __init__(self, weight: float, src: Node = None, dst: Node = None) -> None:
         if src == dst:
             raise ValueError("src and dst must be different")
-        self.value: float = value
+        self.weight: float = weight
         self.dst: Node = dst
         self.src: Node = src
 
@@ -14,7 +14,7 @@ class Edge:
         return self.dst == other.dst and self.src == other.src or self.dst == other.src and self.src == other.dst
 
     def __str__(self) -> str:
-        return f"{self.src} -> {self.dst} ({self.value})"
+        return f"{self.src} -> {self.dst} ({self.weight})"
 
     @staticmethod
     def fromString(s: str) -> Edge:
