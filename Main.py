@@ -6,7 +6,7 @@ from Edge import Edge
 graph = list[list[Node], list[Edge]]
 
 
-def kruskels_algorithm(G: graph) -> list[Edge]:
+def kruskals_algorithm(G: graph) -> list[Edge]:
     nodes = G[0]
     links = G[1]
 

@@ -1,1 +1,1 @@
-# kruskels-algorithm-union-find-implementation
+# kruskals-algorithm-union-find-implementation

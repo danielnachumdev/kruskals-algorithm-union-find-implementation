@@ -7,7 +7,7 @@ def test_size_of_mst():
         n = randint(10, 100)
         g = generate_random_graph(n, 3)
         g[1] = sorted(g[1], key=lambda x: x.value)
-        mst = kruskels_algorithm(g)
+        mst = kruskals_algorithm(g)
         assert(len(mst) == n-1)
 
 
