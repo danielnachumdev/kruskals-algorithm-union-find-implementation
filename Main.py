@@ -3,7 +3,7 @@ from Node import Node
 from Edge import Edge
 
 
-graph = list[list[Node], list[Edge]]
+graph = [list[Node], list[Edge]]
 
 
 def kruskals_algorithm(G: graph) -> list[Edge]:
